@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOut_Activity">
+
+    <TextView
+        android:id="@+id/check_out_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/iu"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/check_out_main_title"
+        android:textColor="@color/text_color"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/iu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/check_out_man_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/check_out_main_title"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/check_out_man_info"
+                android:textColor="@color/text_color"
+                android:textSize="22dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_shape"
+                android:minHeight="30dp"
+                android:onClick="user_db_show"
+                android:text="@string/over"
+                android:textColor="@color/white_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_out_man_info"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/check_out_page_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/complaint_context_edit_shape"
+                android:hint="@string/check_out_page_name"
+                android:padding="6dp"
+                android:textColor="@color/text_color"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/check_out_page_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/complaint_context_edit_shape"
+                android:hint="@string/check_out_page_phone"
+                android:padding="6dp"
+                android:textColor="@color/text_color"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/check_out_page_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/complaint_context_edit_shape"
+                android:hint="@string/check_out_page_address"
+                android:padding="6dp"
+                android:textColor="@color/text_color"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/check_out_page_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/complaint_context_edit_shape"
+                android:hint="@string/check_out_page_email"
+                android:padding="6dp"
+                android:textColor="@color/text_color"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lineview"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/info_layout"
+            android:layout_margin="18dp"
+            android:background="@color/text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineview"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/check_out_page_commodity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/check_out_commodity"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/check_out_page_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/check_out_price"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/check_out_sale"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/check_out_page_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="999"
+                    android:textColor="@color/_red_color"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_shape"
+        android:onClick="check"
+        android:text="@string/check_btn"
+        android:textColor="@color/white_color"
+        android:textSize="20sp" />
+
+</RelativeLayout>

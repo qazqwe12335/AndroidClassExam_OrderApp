@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">end_report</string>
+    <!--商品頁面-->
+    <string name="commodity_main_title">商品資訊</string>
+    <!--結帳頁面-->
+    <string name="check_btn">確認</string>
+
+    <string name="check_out_main_title">結帳</string>
+    <string name="check_out_man_info">聯絡人資訊：</string>
+
+    <string name="check_out_page_name">姓名</string>
+    <string name="check_out_page_phone">電話</string>
+    <string name="check_out_page_address">地址</string>
+    <string name="check_out_page_email">郵件信箱</string>
+
+    <string name="check_out_commodity">購買商品：</string>
+    <string name="check_out_price">購買總價：</string>
+    <string name="check_out_sale">折扣價格：</string>
+
+    <string name="check_out_dialog_title">確認結帳</string>
+    <string name="check_out_dialog_cannel">取消</string>
+    <string name="check_out_dialog_ok">結帳</string>
+
+    <string name="over">上一個結帳資訊</string>
+    <!--分店資訊-->
+    <string name="branch_main_title">分店資訊</string>
+    <string name="check_with_map">查看地圖</string>
+    <string name="branch_google">Google分店：\n地址：1600 Amphitheatre Parkway, Mountain+View, California</string>
+    <string name="branch_lhu">龍華分店：\n地址：桃園市龜山區萬壽路一段300號</string>
+    <!--客訴頁面-->
+    <string name="costomer_complant_title">客訴</string>
+    <string name="costomer_complant_sender_email">寄件人：</string>
+    <string name="costomer_complant_sender_main_title">標  題：</string>
+    <string name="costomer_complant_sender_context">內  容：</string>
+    <string name="costomer_complant_sender_pic">點擊新增照片照片</string>
+    <string name="costomer_complaint_send_button">發  送</string>
+
+    <string name="dialog_camera">拍 照</string>
+    <string name="dialog_picture">相 簿</string>
+    <string name="dialog_close">移 除</string>
+
+    <string name="choose_mail_device">選擇郵件裝置</string>
+    <string name="complaint_main">客訴</string>
+
+    <string name="error_context">請輸入內容或圖片</string>
+    <string name="error_main_title">請輸入標題</string>
+
+    <string name="no_permission">已拒絕權限</string>
+
+    <string-array name="food_name">
+        <item>A套餐</item>
+        <item>B套餐</item>
+        <item>C套餐</item>
+        <item>D套餐</item>
+        <item>E套餐</item>
+        <item>F套餐</item>
+        <item>G套餐</item>
+        <item>H套餐</item>
+        <item>I套餐</item>
+        <item>J套餐</item>
+        <item>K套餐</item>
+        <item>L套餐</item>
+        <item>M套餐</item>
+        <item>N套餐</item>
+    </string-array>
+    <string-array name="money">
+        <item>120</item>
+        <item>99</item>
+        <item>80</item>
+        <item>140</item>
+        <item>129</item>
+        <item>119</item>
+        <item>79</item>
+        <item>230</item>
+        <item>190</item>
+        <item>160</item>
+        <item>169</item>
+        <item>69</item>
+        <item>310</item>
+        <item>100</item>
+    </string-array>
+</resources>

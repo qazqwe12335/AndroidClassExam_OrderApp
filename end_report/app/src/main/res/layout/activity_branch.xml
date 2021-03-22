@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".BranchActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/branch_main_title"
+        android:textColor="@color/text_color"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/complaint_context_edit_shape"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/branch_google"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/google_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape"
+            android:onClick="branch_map"
+            android:text="@string/check_with_map"
+            android:textColor="@color/white_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/complaint_context_edit_shape"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/branch_lhu"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/lhu_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape"
+            android:onClick="branch_map"
+            android:text="@string/check_with_map"
+            android:textColor="@color/white_color" />
+    </LinearLayout>
+</LinearLayout>
